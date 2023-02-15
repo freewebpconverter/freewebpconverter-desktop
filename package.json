@@ -1,0 +1,20 @@
+{
+  "name": "webp-tool",
+  "productName": "WebP Converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Yasin B. Kalkan",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "webp-converter": "^2.3.3"
+  },
+  "devDependencies": {
+    "electron": "^19.0.8",
+    "electron-packager": "^15.5.1"
+  }
+}

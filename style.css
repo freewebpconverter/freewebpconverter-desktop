@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafbfe;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  -webkit-app-region: drag;
+}
+
+.d-none {
+  display: none !important;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header svg {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e7edf1;
+  margin: 0px 50px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.drag-file {
+  position: relative;
+}
+
+.drag-file button {
+  pointer-events: none;
+}
+
+.drag-file input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.drag-file label {
+  background-color: #e4eaf8;
+  border: 2px dashed #7994de;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.drag-file label strong,
+.drag-file label p {
+  color: #7994de;
+}
+
+.drag-file label svg {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.drag-file label button {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.file-list h3 {
+  margin-bottom: 20px;
+}
+
+.file-list ul {
+}
+
+.file-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6fafe;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.file-list ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.file-list ul li p {
+  display: flex;
+  align-items: center;
+}
+
+.file-list ul li p svg {
+  margin-right: 20px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.status svg {
+  display: none;
+}
+
+.status.success {
+  background-color: #48ce72;
+}
+
+.status.success .success-icon {
+  display: block;
+}
+
+.status.loading {
+  background-color: #eab44d;
+}
+
+.status.loading .loading-icon {
+  display: block;
+  transform: rotate(0deg);
+  transform-origin: center;
+  animation: loadingAnimation 1s infinite;
+}
+
+@keyframes loadingAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.status.error {
+  background-color: #ce4848;
+}
+
+.status.error .error-icon {
+  display: block;
+}
+
+strong,
+p {
+  font-size: 17px;
+  margin: 0;
+  color: #344b80;
+}
+
+button {
+  font-size: 15px;
+  padding: 15px 40px;
+  color: #fff;
+  background-color: #7994de;
+  border-radius: 6px;
+  border: 0px;
+}
+
+h1 {
+  font-size: 43px;
+  color: #7994de;
+  margin: 0;
+}
+
+h3 {
+  font-size: 21px;
+  color: #7994de;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
