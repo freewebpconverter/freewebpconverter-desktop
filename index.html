@@ -1,57 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello from Electron renderer!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; font-src 'self' https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com">
-  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-  <title>Hello from Electron renderer!</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <div class="container">
-    <header>
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="30"
-        viewbox="0 0 41 30">
-        <defs>
-          <lineargradient id="linear-gradient" x1="-0.119" y1="1" x2="0.777" y2="0.161"
-            gradientunits="objectBoundingBox">
-            <stop offset="0" stop-color="#27f7fa" />
-            <stop offset="1" stop-color="#fc7bf8" />
-          </lineargradient>
-        </defs>
-        <path id="Path_755" data-name="Path 755"
-          d="M1113,314l-7.5,5v8.007L1092.493,314,1079.5,327.05V319l-7.5-5v30l20.522-19.572L1113,344Z"
-          transform="translate(-1072 -314)" fill="url(#linear-gradient)" />
-      </svg>
-      <h1>WebP Converter</h1>
+  <body class="p-14">
+    <header class="flex">
+      <h1>
+        <img
+          src="assets/img/logo.webp"
+          srcset="
+            assets/img/logo.webp    1x,
+            assets/img/logo@2x.webp 2x,
+            assets/img/logo@3x.webp 3x
+          "
+          alt="Free WebP Converter Logo"
+        />
+      </h1>
     </header>
-    <section>
-      <div id="dropzone" class="drag-file" draggable="true">
-        <input type="file" name="upload-file" id="upload-file" />
-        <label for="upload-file">
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="42" viewbox="0 0 60 42">
-            <path id="cloud-arrow-up-solid"
-              d="M13.5,74A13.5,13.5,0,0,1,9.019,47.759Q9,47.38,9,47a15,15,0,0,1,28-7.481A8.338,8.338,0,0,1,42,38a8.949,8.949,0,0,1,9,9,9.1,9.1,0,0,1-.6,3.244A12,12,0,0,1,48,74Zm7.406-20.344a2.167,2.167,0,0,0,0,3.1,2.036,2.036,0,0,0,3.1,0l3.741-3.581V65.75a2.25,2.25,0,0,0,4.5,0V53.178l3.656,3.581a2.194,2.194,0,0,0,3.1-3.1l-7.5-7.5a2.167,2.167,0,0,0-3.1,0Z"
-              transform="translate(0 -32)" fill="#7994de" />
-          </svg>
-          <strong>Drag your files here</strong>
-          <p>or</p>
-          <button type="button">Browse Files</button>
-        </label>
-      </div>
-    </section>
-    <section>
-      <div class="file-list">
-        <h3>Progress List</h3>
-        <p id="no-list-text">There is no file currently in process.</p>
-        <ul id="list" class="d-none">
-        </ul>
-      </div>
-    </section>
-  </div>
-</body>
-<script src="./index.js"></script>
-
+  </body>
+  <script src="./index.js"></script>
 </html>
