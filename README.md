@@ -1,12 +1,11 @@
-# Free WebP Converter
+<h1 align="center">Welcome to the <a href="https://getbootstrap.com/">Free WebP Converter</a> community!</h1><br>
 
 <p align="center">
-  <img align="center" width="100" src="https://raw.githubusercontent.com/webp-converter/webp-converter-app/main/assets/img/webp-logo-2x.png" />
+  <a href="https://freewebpconverter.com/">
+    <img src="https://freewebpconverter.com/assets/img/logo@3x.webp" alt="Free Webp Converter Logo" width="98" height="110">
+  </a>
 </p>
 
-It was developed to convert your image files to WebP format for free. This project was created with [Electron.js](https://www.electronjs.org/).
-
-# Download
-For MacOS: https://github.com/webp-converter/webp-converter-app/blob/main/download/WebPConverter.dmg
+<p align="center">Free WebP Converter is an image file converter app for desktop. Convert any image files to WEBP format in seconds.</p>
 
 <i>* The project is still under development and is available for demo use only. As it is under development, it can only be used on macOS operating system.</i>
